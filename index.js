@@ -11,7 +11,7 @@ function myBankingSystem() {
     console.log(chalk.green("Welcome to my banking system"));
     console.log("\nChoose an option to proceed:");
     console.log("1. Register a customer");
-    console.log("2. Login a customer");
+    console.log("2. Login  customer");
     console.log("3. Check balance");
     console.log("4. Change pin");
     console.log("5. Transfer money");
