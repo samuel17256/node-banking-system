@@ -107,7 +107,7 @@ function myBankingSystem() {
             newPin = prompt("Enter a new 4-digit PIN: ").trim();
             if (newPin.length !== 4 || isNaN(newPin)) {
               console.log(
-                chalk.red("PIN must be exactly 4 digits and numeric.")
+                chalk.red("PIN must be exactly 4 digits and it must be a number.")
               );
             }
           } while (newPin.length !== 4 || isNaN(newPin));
@@ -128,7 +128,7 @@ function myBankingSystem() {
 
         if (!recipient) {
           console.log(
-            chalk.red("Recipient not found or cannot transfer to yourself.")
+            chalk.red("Recipient not found and you cannot transfer to yourself.")
           );
         } else {
           const amount = parseFloat(
